@@ -117,7 +117,7 @@ export const PictureQualitySelector = ({ hallData, setHallData }) => {
           {`${show.hall_name} (${show.show_type})`}
           <div className="form-showtimes">{options}</div>
         </div>
-        <p className="form-show-price">{`BDT ${show.price_per_seat}TK`}</p>
+        <p className="form-show-price">{`${show.price_per_seat}₮`}</p>
       </div>
     );
   });
@@ -125,7 +125,7 @@ export const PictureQualitySelector = ({ hallData, setHallData }) => {
   return (
     <div>
       <form>
-        <div className="form-item-heading">Select Quality</div>
+        <div className="form-item-heading">Танхимаа сонгох</div>
         {loading && <HashLoader cssOverride={override} color="#eb3656" />}
         {!loading && (
           <div className="form-hall-container">{showtimeOptions}</div>

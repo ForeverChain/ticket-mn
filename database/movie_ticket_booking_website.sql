@@ -1,11 +1,6 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Sep 28, 2023 at 10:41 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+
+CREATE DATABASE movie_ticket_booking_website;
+use movie_ticket_booking_website;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,14 +35,14 @@ CREATE TABLE `features` (
 --
 
 INSERT INTO `features` (`id`, `title`, `description`, `image_path`, `theatre_id`) VALUES
-(1, 'Unparalleled Cinematic Experience', 'Immerse yourself in stunning visuals and crystal-clear sound, as our state-of-the-art IMAX technology transports you directly into the heart of the action. With a screen that stretches beyond your peripheral vision every frame comes alive with unparalleled brilliance.', '/Images/features/imax.webp', 1),
-(2, 'Delight in Dolby Atmos', 'Experience sound like never before with Dolby Atmos, the epitome audio technology that takes you on an immersive sonic journey.With sound objects moving seamlessly around the theatre, you\'ll be transported into the heart of every scene, making you an integral part of the story.', '/Images/features/sound.webp', 1),
-(3, 'Tantalizing Treats', 'At our movie theatre, we take your movie-watching experience beyond the screen by offering a delectable array of food items at our concession stand. From freshly buttered popcorn, crispy nachos with zesty cheese dips, to gourmet hotdogs and a variety of refreshing beverages, our concession stand is a culinary paradise for movie enthusiasts.', '/Images/features/food.webp', 1),
-(4, 'Luxurious Escape', 'Step into a world of opulence and relaxation, designed to cater to your every need before and after the main event. Our Premium Lounge welcomes you with plush leather seating, elegant décor, and a refined ambiance that sets the stage for an unforgettable cinematic journey.', '/Images/features/lounge.webp', 1),
-(6, 'Unparalleled Cinematic Experience', 'Immerse yourself in stunning visuals and crystal-clear sound, as our state-of-the-art IMAX technology transports you directly into the heart of the action. With a screen that stretches beyond your peripheral vision every frame comes alive with unparalleled brilliance.', '/Images/features/imax.webp', 2),
-(7, 'Delight in Dolby Atmos', 'Experience sound like never before with Dolby Atmos, the epitome audio technology that takes you on an immersive sonic journey.With sound objects moving seamlessly around the theatre, you\'ll be transported into the heart of every scene, making you an integral part of the story.', '/Images/features/sound.webp', 2),
-(8, 'Tantalizing Treats', 'At our movie theatre, we take your movie-watching experience beyond the screen by offering a delectable array of food items at our concession stand. From freshly buttered popcorn, crispy nachos with zesty cheese dips, to gourmet hotdogs and a variety of refreshing beverages, our concession stand is a culinary paradise for movie enthusiasts.', '/Images/features/food.webp', 2),
-(9, 'Luxurious Escape', 'Step into a world of opulence and relaxation, designed to cater to your every need before and after the main event. Our Premium Lounge welcomes you with plush leather seating, elegant décor, and a refined ambiance that sets the stage for an unforgettable cinematic journey.', '/Images/features/lounge.webp', 2);
+(1, 'Unparalleled Cinematic Experience', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies eros. Integer ut ullamcorper magna, quis tincidunt enim. Phasellus ut felis dolor. Donec hendrerit justo nec justo vulputate, sed tristique urna hendrerit. Nullam tincidunt tortor eget vehicula tincidunt. Fusce eu tellus at urna mollis ultricies sed sed arcu. Sed varius sem a felis fermentum, quis mattis quam consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', '/Images/features/imax.webp', 1),
+(2, 'Delight in Dolby Atmos', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies eros. Integer ut ullamcorper magna, quis tincidunt enim. Phasellus ut felis dolor. Donec hendrerit justo nec justo vulputate, sed tristique urna hendrerit. Nullam tincidunt tortor eget vehicula tincidunt. Fusce eu tellus at urna mollis ultricies sed sed arcu. Sed varius sem a felis fermentum, quis mattis quam consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', '/Images/features/sound.webp', 1),
+(3, 'Tantalizing Treats', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies eros. Integer ut ullamcorper magna, quis tincidunt enim. Phasellus ut felis dolor. Donec hendrerit justo nec justo vulputate, sed tristique urna hendrerit. Nullam tincidunt tortor eget vehicula tincidunt. Fusce eu tellus at urna mollis ultricies sed sed arcu. Sed varius sem a felis fermentum, quis mattis quam consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', '/Images/features/food.webp', 1),
+(4, 'Luxurious Escape', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies eros. Integer ut ullamcorper magna, quis tincidunt enim. Phasellus ut felis dolor. Donec hendrerit justo nec justo vulputate, sed tristique urna hendrerit. Nullam tincidunt tortor eget vehicula tincidunt. Fusce eu tellus at urna mollis ultricies sed sed arcu. Sed varius sem a felis fermentum, quis mattis quam consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', '/Images/features/lounge.webp', 1),
+(6, 'Unparalleled Cinematic Experience', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies eros. Integer ut ullamcorper magna, quis tincidunt enim. Phasellus ut felis dolor. Donec hendrerit justo nec justo vulputate, sed tristique urna hendrerit. Nullam tincidunt tortor eget vehicula tincidunt. Fusce eu tellus at urna mollis ultricies sed sed arcu. Sed varius sem a felis fermentum, quis mattis quam consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', '/Images/features/imax.webp', 2),
+(7, 'Delight in Dolby Atmos', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies eros. Integer ut ullamcorper magna, quis tincidunt enim. Phasellus ut felis dolor. Donec hendrerit justo nec justo vulputate, sed tristique urna hendrerit. Nullam tincidunt tortor eget vehicula tincidunt. Fusce eu tellus at urna mollis ultricies sed sed arcu. Sed varius sem a felis fermentum, quis mattis quam consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', '/Images/features/sound.webp', 2),
+(8, 'Tantalizing Treats', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies eros. Integer ut ullamcorper magna, quis tincidunt enim. Phasellus ut felis dolor. Donec hendrerit justo nec justo vulputate, sed tristique urna hendrerit. Nullam tincidunt tortor eget vehicula tincidunt. Fusce eu tellus at urna mollis ultricies sed sed arcu. Sed varius sem a felis fermentum, quis mattis quam consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', '/Images/features/food.webp', 2),
+(9, 'Luxurious Escape', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies eros. Integer ut ullamcorper magna, quis tincidunt enim. Phasellus ut felis dolor. Donec hendrerit justo nec justo vulputate, sed tristique urna hendrerit. Nullam tincidunt tortor eget vehicula tincidunt. Fusce eu tellus at urna mollis ultricies sed sed arcu. Sed varius sem a felis fermentum, quis mattis quam consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', '/Images/features/lounge.webp', 2);
 
 -- --------------------------------------------------------
 
@@ -500,12 +495,12 @@ CREATE TABLE `movie` (
 --
 
 INSERT INTO `movie` (`id`, `name`, `image_path`, `language`, `synopsis`, `rating`, `duration`, `top_cast`, `release_date`) VALUES
-(1, 'Spider-Man: Across the Spider-Verse', '/Images/movies/spiderman.webp', 'English', 'Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero.', 8.8, '2h 16m', 'Oscar Isaac', '2023-06-23'),
-(2, 'Extraction 2', '/Images/movies/extraction2.webp', 'English', 'After barely surviving his grievous wounds from his mission in Dhaka, Bangladesh, Tyler Rake is back, and his team is ready to take on their next mission.', 7.0, '2h 3m', 'Chris Hemsworth', '2023-06-13'),
-(3, 'Murder Mystery 2', '/Images/movies/murderMystery.webp', 'English', 'Full-time detectives Nick and Audrey are struggling to get their private eye agency off the ground. They find themselves at the center of international abduction when their friend Maharaja, is kidnapped at his own lavish wedding.', 5.7, '1h 30m', 'Jennifer Aniston', '2023-03-31'),
-(4, 'Mission: Impossible - Dead Reckoning Part One', '/Images/movies/missionImpossible.webp', 'English', 'Ethan Hunt and the IMF team must track down a terrifying new weapon that threatens all of humanity if it falls into the wrong hands. With control of the future and the fate of the world at stake, a deadly race around the globe begins. Confronted by a mysterious, all-powerful enemy, Ethan is forced to consider that nothing can matter more than the mission -- not even the lives of those he cares about most.', 8.0, '2h 43m', 'Tom Cruise', '2023-07-10'),
-(5, 'Oppenheimer', '/Images/movies/oppenheimer.webp', 'English', 'During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Oppenheimer and a team of scientists spend years developing and designing the atomic bomb. Their work comes to fruition on July 16, 1945, as they witness the world\'s first nuclear explosion, forever changing the course of history.', 9.4, '3h', 'Cillian Murphy', '2023-07-21'),
-(6, 'Barbie', '/Images/movies/barbie.webp', 'English', 'Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.', 7.6, '1h 54m', 'Margot Robbie', '2023-07-21');
+(1, 'Spider-Man: Across the Spider-Verse', '/Images/movies/spiderman.webp', 'Mongolian', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies eros. Integer ut ullamcorper magna, quis tincidunt enim. Phasellus ut felis dolor. Donec hendrerit justo nec justo vulputate, sed tristique urna hendrerit. Nullam tincidunt tortor eget vehicula tincidunt. Fusce eu tellus at urna mollis ultricies sed sed arcu. Sed varius sem a felis fermentum, quis mattis quam consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', 8.8, '2h 16m', 'Oscar Isaac', '2023-06-23'),
+(2, 'Extraction 2', '/Images/movies/extraction2.webp', 'Mongolian', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies eros. Integer ut ullamcorper magna, quis tincidunt enim. Phasellus ut felis dolor. Donec hendrerit justo nec justo vulputate, sed tristique urna hendrerit. Nullam tincidunt tortor eget vehicula tincidunt. Fusce eu tellus at urna mollis ultricies sed sed arcu. Sed varius sem a felis fermentum, quis mattis quam consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', 7.0, '2h 3m', 'Chris Hemsworth', '2023-06-13'),
+(3, 'Murder Mystery 2', '/Images/movies/murderMystery.webp', 'Mongolian', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies eros. Integer ut ullamcorper magna, quis tincidunt enim. Phasellus ut felis dolor. Donec hendrerit justo nec justo vulputate, sed tristique urna hendrerit. Nullam tincidunt tortor eget vehicula tincidunt. Fusce eu tellus at urna mollis ultricies sed sed arcu. Sed varius sem a felis fermentum, quis mattis quam consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', 5.7, '1h 30m', 'Jennifer Aniston', '2023-03-31'),
+(4, 'Mission: Impossible - Dead Reckoning Part One', '/Images/movies/missionImpossible.webp', 'Mongolian', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies eros. Integer ut ullamcorper magna, quis tincidunt enim. Phasellus ut felis dolor. Donec hendrerit justo nec justo vulputate, sed tristique urna hendrerit. Nullam tincidunt tortor eget vehicula tincidunt. Fusce eu tellus at urna mollis ultricies sed sed arcu. Sed varius sem a felis fermentum, quis mattis quam consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', 8.0, '2h 43m', 'Tom Cruise', '2023-07-10'),
+(5, 'Oppenheimer', '/Images/movies/oppenheimer.webp', 'Mongolian', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies eros. Integer ut ullamcorper magna, quis tincidunt enim. Phasellus ut felis dolor. Donec hendrerit justo nec justo vulputate, sed tristique urna hendrerit. Nullam tincidunt tortor eget vehicula tincidunt. Fusce eu tellus at urna mollis ultricies sed sed arcu. Sed varius sem a felis fermentum, quis mattis quam consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', 9.4, '3h', 'Cillian Murphy', '2023-07-21'),
+(6, 'Barbie', '/Images/movies/barbie.webp', 'Mongolian', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut ultricies eros. Integer ut ullamcorper magna, quis tincidunt enim. Phasellus ut felis dolor. Donec hendrerit justo nec justo vulputate, sed tristique urna hendrerit. Nullam tincidunt tortor eget vehicula tincidunt. Fusce eu tellus at urna mollis ultricies sed sed arcu. Sed varius sem a felis fermentum, quis mattis quam consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.', 7.6, '1h 54m', 'Margot Robbie', '2023-07-21');
 
 -- --------------------------------------------------------
 
@@ -548,22 +543,16 @@ CREATE TABLE `movie_genre` (
 --
 
 INSERT INTO `movie_genre` (`movie_id`, `genre`) VALUES
-(1, 'Action'),
-(1, 'Adventure'),
-(1, 'Animation'),
-(2, 'Action'),
-(2, 'Thriller'),
-(3, 'Comedy'),
-(3, 'Mystery'),
-(4, 'Action'),
-(4, 'Adventure'),
-(4, 'Thriller'),
-(5, 'Biography'),
-(5, 'Drama'),
-(5, 'History'),
-(6, 'Adventure'),
-(6, 'Comedy'),
-(6, 'Fantasy');
+(1, 'Тулаант'),
+(1, 'Адал явдаль'),
+(1, 'Анимэйшн'),
+(2, 'Триллэр'),
+(3, 'Инээдмийн'),
+(3, 'Нууцлаг'),
+(5, 'Хувь хүний тухай'),
+(5, 'Драм'),
+(5, 'Түүхэн'),
+(6, 'Фантази');
 
 -- --------------------------------------------------------
 
@@ -584,16 +573,16 @@ CREATE TABLE `payment` (
 --
 
 INSERT INTO `payment` (`id`, `payment_time`, `amount`, `method`, `customer_email`) VALUES
-(1, '2023-08-16 19:41:37', 1400, 'Bkash', 'Belal123@gmail.com'),
-(2, '2023-08-16 19:43:03', 1350, 'Nagad', 'rahim123@gmail.com'),
-(3, '2023-08-20 10:32:06', 1350, 'Nagad', 'neloy.saha456@gmail.com'),
-(4, '2023-08-20 10:44:19', 700, 'Bkash', 'neloy.saha456@gmail.com'),
-(5, '2023-08-20 12:24:02', 700, 'Debit Card', 'neloy.saha456@gmail.com'),
-(6, '2023-08-20 12:40:15', 1050, 'Nagad', 'adib@yahoo.com'),
-(7, '2023-08-20 12:41:00', 900, 'Nagad', 'adib@yahoo.com'),
-(8, '2023-08-20 14:36:08', 2700, 'Bkash', 'sazin@gmail.com'),
-(9, '2023-08-20 16:13:23', 700, 'Bkash', 'neloy.saha456@gmail.com'),
-(10, '2023-08-20 17:56:07', 900, 'Bkash', 'farhan@gmail.com');
+(1, '2023-08-16 19:41:37', 1400, 'Credit Card', 'Belal123@gmail.com'),
+(2, '2023-08-16 19:43:03', 1350, 'Credit Card', 'rahim123@gmail.com'),
+(3, '2023-08-20 10:32:06', 1350, 'Credit Card', 'neloy.saha456@gmail.com'),
+(4, '2023-08-20 10:44:19', 700, 'Credit Card', 'neloy.saha456@gmail.com'),
+(5, '2023-08-20 12:24:02', 700, 'Credit Card', 'neloy.saha456@gmail.com'),
+(6, '2023-08-20 12:40:15', 1050, 'Credit Card', 'adib@yahoo.com'),
+(7, '2023-08-20 12:41:00', 900, 'Credit Card', 'adib@yahoo.com'),
+(8, '2023-08-20 14:36:08', 2700, 'Credit Card', 'sazin@gmail.com'),
+(9, '2023-08-20 16:13:23', 700, 'Credit Card', 'neloy.saha456@gmail.com'),
+(10, '2023-08-20 17:56:07', 900, 'Credit Card', 'farhan@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -621,7 +610,7 @@ INSERT INTO `person` (`email`, `first_name`, `last_name`, `password`, `phone_num
 ('Belal123@gmail.com', 'Belal', 'Hasan', '123', '01757912079', 1000000, 'Customer'),
 ('farhan@gmail.com', 'Farhan', 'Abedin', 'farhan123', '01757912079', 100000, 'Customer'),
 ('jon@alu.com', 'Test', 'Saha1', 'test1', '123321311', 100000, 'Customer'),
-('jon@potato.com', 'Test', 'Saha', 'test1', '123321311', 100000, 'Customer'),
+('jon@potato.com', 'Test', 'Saha', 'test1', '123321311', 100000, 'CustPanthapathomer'),
 ('Jon@snow.com', 'Jon', 'Snow', '456', '123123233', 10000, 'Customer'),
 ('neloy.saha456@gmail.com', 'Neloy', 'Saha', '1234', '01757912079', 100000, 'Customer'),
 ('niaz@nafi.com', 'Niaz', 'Rahman', '123', '01821379981', 100000, 'Customer'),
@@ -826,18 +815,18 @@ CREATE TABLE `showtimes` (
 --
 
 INSERT INTO `showtimes` (`id`, `movie_start_time`, `show_type`, `showtime_date`, `price_per_seat`) VALUES
-(1, '11:00 am', '2D', '2023-08-19', 350),
-(2, '2:30 pm', '3D', '2023-08-19', 450),
-(3, '6:00 pm', '3D', '2023-08-19', 450),
-(4, '11:00 am', '2D', '2023-08-20', 350),
-(5, '2:30 pm', '3D', '2023-08-20', 450),
-(6, '6:00 pm', '3D', '2023-08-20', 450),
-(7, '11:00 am', '2D', '2023-08-21', 350),
-(8, '2:30 pm', '3D', '2023-08-21', 450),
-(9, '6:00 pm', '3D', '2023-08-21', 450),
-(10, '11:00 am', '2D', '2023-08-22', 350),
-(11, '2:30 pm', '3D', '2023-08-22', 450),
-(12, '6:00 pm', '3D', '2023-08-22', 450);
+(1, '11:00 am', '2D', '2024-04-29', 350),
+(2, '2:30 pm', '3D', '2024-04-29', 450),
+(3, '6:00 pm', '3D', '2024-04-29', 450),
+(4, '11:00 am', '2D', '2024-04-30', 350),
+(5, '2:30 pm', '3D', '2024-04-30', 450),
+(6, '6:00 pm', '3D', '2024-04-30', 450),
+(7, '11:00 am', '2D', '2024-05-01', 350),
+(8, '2:30 pm', '3D', '2024-05-01', 450),
+(9, '6:00 pm', '3D', '2024-05-01', 450),
+(10, '11:00 am', '2D', '2024-05-02', 350),
+(11, '2:30 pm', '3D', '2024-05-02', 450),
+(12, '6:00 pm', '3D', '2024-05-02', 450);
 
 -- --------------------------------------------------------
 
@@ -857,8 +846,8 @@ CREATE TABLE `theatre` (
 --
 
 INSERT INTO `theatre` (`id`, `name`, `location`, `location_details`) VALUES
-(1, 'Bashundhara Shopping Mall', 'Panthapath', 'Show Motion Limited Level 8, Bashundhara City 13/3 Ka, Panthapath, Tejgaon, Dhaka-1205'),
-(2, 'Shimanto Shambhar', 'Dhanmondi', 'Shimanto Shamvar Road no 2, Dhanmondi, Dhaka-1205');
+(1, 'Urgoo7', 'Erdenet', 'Zaluuchuud hothon'),
+(2, 'Urgoo1', 'Ulaanbaatar', 'BZD Urgoo1');
 
 -- --------------------------------------------------------
 
